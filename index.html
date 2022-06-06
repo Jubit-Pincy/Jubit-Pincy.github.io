@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jubit Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="Logo.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Jubit Pincy</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">front-end dev
+                <br>and tech enthusiast
+            </p>
+            <img src="Jubit.jpg" alt="my picture" class="intro__img">
+        </section>
+        
+        
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Design + Development</h3>
+                    <p>I am proficient in desgning using HTML and CSS along with JavaScript.
+                        I also am familiar with server-side scripting language like PHP with MySql.
+                    </p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>Debugging</h3>
+                    <p>The what and why of code not working has always intrigued me and is the key factor
+                        in helping me learn any new language. Debugging code is one of my favourite parts of develpment.
+                    </p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>Editing</h3>
+                    <p>As I am proficient in the English language I have done an ample amount of editing works.
+                        I've edited essays, poems, and written several reports for my department.
+                    </p>
+                </div> <!-- / service -->
+            </div> <!-- / services -->
+            
+            <a href="#work" class="btn">My Work</a>
+        </section>
+        
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">Designer & developer based out of Kerala</p>
+           
+           <div class="about-me__body">
+            <p>I'm currently a BCA student who's completed the course and awaiting the results of the final two semesters.
+                I'm a creative developer from Thrissur, Kerala and I'm eager to put my skills and knowledge into action. 
+                I'm most familiar with HTML, CSS, and JacaScript. Other languages I know include Python, Java, PHP, MySql, 
+                PSQL, C and C++. Other than coding, I have an interest in books (my all time favourite author is Dan Brown 
+                and Sir Arthur Conan Doyle), music, cycling, a little bit of drawing and playing badminton.</p>
+           </div>
+           
+           <img src="aboutme.jpg" alt="coding image" class="about-me__img">
+        </section>
+        
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my work</p>
+            
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="portfolio-item1.html" class="portfolio__item">
+                    <img src="portfolio1.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 02 -->
+                <a href="portfolio-item2.html" class="portfolio__item">
+                    <img src="portfolio2.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 03 -->
+                <a href="portfolio-item3.html" class="portfolio__item">
+                    <img src="portfolio3.png" alt="" class="portfolio__img">
+                </a>
+                
+            </div>
+        </section>
+        
+        
+       <!-- Footer -->
+       <footer class="footer">
+        <!-- replace with your own email address -->
+        <a href="mailto:jubitpincy@gmail.com" class="footer__link">Mail me</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="www.linkedin.com/in/jubit-pincy">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.instagram.com/ill_be_me_/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+        
+        
+        <script src="index.js"></script>
+        
+    </body>
+</html>
